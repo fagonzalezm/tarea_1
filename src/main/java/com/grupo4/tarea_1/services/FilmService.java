@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/films")
-@CrossOrigin(origins = "http://localhost:8082")
+@CrossOrigin(origins = "*")
 public class FilmService {
     @Autowired
     private FilmRepository filmRepository;

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/actors")
-@CrossOrigin(origins = "http://localhost:8082")
+@CrossOrigin(origins = "*")
 public class ActorService {
     @Autowired
     private ActorRepository actorRepository;
